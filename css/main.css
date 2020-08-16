@@ -149,6 +149,8 @@ img {
 /* ---------- Mobile Styles - Home Page ---------- */
 
 .landing-page {
+  width: 100%;
+  min-height: 1000px;
   margin: 0;
   padding: 20px 20px 120px 20px;
   background: url('../img/secluded-islands.jpg') center no-repeat #999999;
