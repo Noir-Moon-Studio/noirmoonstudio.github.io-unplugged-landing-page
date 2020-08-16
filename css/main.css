@@ -87,54 +87,59 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* General Text Styles */
+ /* General Text Styles */
 
- html {
-   font-size: 20px;
- }
+html {
+ font-size: 20px;
+}
 
- body {
-   margin: 0;
-   font-family: 'Hind Vadodara', sans-serif;
-   font-size: 1.25em;
-   line-height: 1.7em;
-   text-align: left;
-   color: #ffffff;
-   text-shadow: 2px 2px #000000;
- }
+body {
+ margin: 0;
+ font-family: 'Hind Vadodara', sans-serif;
+ font-size: 1.25em;
+ line-height: 1.7em;
+ /* text-align: center; */
+ color: #ffffff;
+ text-shadow: 2px 2px #000000;
+}
 
- h2 {
-   font-family: 'Poppins', sans-serif;
-   font-weight: 400;
-   font-size: 1.875em; /* 30px */
-   line-height: 1.2em;
-   padding: 10px;
-   text-align: center;
- }
+h2 {
+ width: 100%;
+ color: #ff6600;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 400;
+ font-size: 1.875em; /* 30px */
+ line-height: 1.2em;
+ /*padding: 10px;*/
+ display: flex;
+ justify-content: center;
+ align-items: center;
 
- h3 {
-   font-family: 'Poppins', sans-serif;
-   font-size: 1.7em;
- }
+}
 
- p {
-   font-family: 'Poppins', sans-serif;
-   font-size: .875em ; /* 14px */
-   font-weight: 400; /* normal */
-   line-height: 1.7em; /* 1.285em !important; a little more than 20 */
-   padding: 10px;
-   text-align: center;
+h3 {
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.7em;
+}
 
- }
+p {
+ font-family: 'Poppins', sans-serif;
+ font-size: .875em ; /* 14px */
+ font-weight: 400; /* normal */
+ line-height: 1.7em; /* 1.285em !important; a little more than 20 */
+ /*padding: 10px;*/
+ /* text-align: center; */
 
- img {
-   width: 100%;
- }
+}
+
+img {
+ width: 100%;
+}
 
 .content-wrapper {
-  width: 60%;
-  margin: 10px;
-  text-align: left;
+ width: 100%;
+ text-align: center;
+ /*margin: 10px;*/
 }
 
 
@@ -143,17 +148,23 @@ textarea {
 
 .landing-page {
   margin: 0;
-  background: url('../img/secluded-islands.jpg') center no-repeat;
+  padding: 20px 20px 120px 20px;
+  background: url('../img/secluded-islands.jpg') center no-repeat #999999;
   background-size: cover;
   overflow: hidden;
 }
 
 
 .form {
-  width: 50%;
-  margin-left: 15%;
+  width: 100%;
+  /*margin: 45px;*/
+  /* margin-left: 15%; */
   text-align: justify;
   font-size: .75em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 
 }
 
@@ -168,21 +179,25 @@ input[type=text] {
 }
 
 input[type=button] {
-  width: 55%;
+  width: 60%;
   color: #ffffff;
-  background-color: orange;
+  background-color: #ff6600;
   border: 1px solid #000000;
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
+  text-shadow: 2px 2px #000000;
 }
 
 
 .copyright {
-  margin: 45px;
-  width: 90%;
+  /*margin: 45px;*/
+  width: 100%;
+  font-size: .75em ; /* 12px */
   text-align: center;
 }
+
+
 
 
 /* TABLET STYLES LARGER THAN 768PX */
@@ -190,7 +205,65 @@ input[type=button] {
 
 /* General Styles */
 
+.content-wrapper {
+  width: 90%;
+  margin: 0;
+  text-align: center;
+}
 
+h2 {
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7em;
+}
+
+p {
+  width: 80%;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: .875em ; /* 14px */
+  font-weight: 400; /* normal */
+  line-height: 1.7em; /* 1.285em !important; a little more than 20 */
+  /*padding: 10px;*/
+  text-align: center;
+}
+
+
+/* ---------- Tablet Styles - Home Page ---------- */
+
+.landing-page {
+  padding: 60px;
+}
+
+.form {
+  width: 60%;
+  padding-left: 80px;
+}
+
+input[type=text] {
+  width: 55%;
+  font-size: .75em;
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type=button] {
+  width: 40%;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+.copyright p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -205,13 +278,34 @@ input[type=button] {
 /* DESKTOP STYLES LARGER THAN 1200PX */
 @media only screen and (min-width: 1200px) {
 
-  /* General Styles */
+/* General Styles */
+
+h2 {
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7em;
+}
+
+p {
+  width: 60%;
+  padding: 10px;
+}
+
+/* ---------- Desktop Styles - Home Page ---------- */
 
 .landing-page {
   overflow: hidden;
 }
 
-
+.form {
+  width: 50%;
+  padding-left: 80px;
+}
 
 
 
