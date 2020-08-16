@@ -94,6 +94,7 @@ html {
 }
 
 body {
+ width: auto;
  margin: 0;
  font-family: 'Hind Vadodara', sans-serif;
  font-size: 1.25em;
