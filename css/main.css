@@ -94,7 +94,7 @@ html {
 }
 
 body {
- width: auto;
+ width: auto !important;
  margin: 0;
  font-family: 'Hind Vadodara', sans-serif;
  font-size: 1.25em;
@@ -102,7 +102,7 @@ body {
  /* text-align: center; */
  color: #ffffff;
  text-shadow: 2px 2px #000000;
- overflow: hidden;
+ overflow-x: hidden;
 }
 
 h2 {
